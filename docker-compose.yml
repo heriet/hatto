@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  dev:
+    build:
+        context: ./
+        dockerfile: dev.dockerfile
+    image: hatto-dev:latest
+    container_name: hatto-dev
+    volumes:
+      - ./:/work

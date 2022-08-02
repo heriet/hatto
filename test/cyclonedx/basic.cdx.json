@@ -1,0 +1,36 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:1cbd0182-2595-441b-8b09-c1326a374778",
+    "version": 1,
+    "components": [
+      {
+        "bom-ref": "pkg:heriet/hatto/foo@1.0.0",
+        "type": "library",
+        "publisher": "heriet",
+        "group": "heriet",
+        "name": "foo",
+        "version": "1.0.0",
+        "licenses": [
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      {
+        "bom-ref": "pkg:heriet/hatto/bar@2.0.0",
+        "type": "library",
+        "publisher": "heriet",
+        "group": "heriet",
+        "name": "bar",
+        "version": "2.0.0",
+        "licenses": [
+          {
+            "expression": "MIT or Apache-2.0"
+          }
+        ]
+      }
+    ]
+  }

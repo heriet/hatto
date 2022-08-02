@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<bom serialNumber="urn:uuid:1cbd0182-2595-441b-8b09-c1326a374778" version="1" xmlns="http://cyclonedx.org/schema/bom/1.3">
+    <components>
+        <component type="application">
+            <name>foo</name>
+            <version>1.0.0</version>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+        </component>
+        <component type="application">
+            <name>bar</name>
+            <version>2.0.0</version>
+            <licenses>
+                <expression>MIT or Apache-2.0</expression>
+            </licenses>
+        </component>
+    </components>
+</bom>

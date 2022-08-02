@@ -1,0 +1,31 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: hello
+DocumentNamespace: https://github.com/heriet/hatto/example/basic
+Creator: Person: heriet (heriet@heriet.info)
+Creator: Tool: LicenseFind-1.0
+Created: 2022-08-01T12:34:00Z
+
+##### Package: foo
+
+PackageName: foo
+SPDXID: SPDXRef-Package-foo
+PackageDownloadLocation: git+https://github.com/heriet/hatto.git#example/basic
+FilesAnalyzed: true
+PackageVerificationCode: b92c6fb161b39991d96613f7b8c348422cf53c58
+PackageLicenseConcluded: MIT
+PackageLicenseInfoFromFiles: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+
+##### Package: bar
+
+PackageName: bar
+SPDXID: SPDXRef-Package-bar
+PackageDownloadLocation: git+https://github.com/heriet/hatto.git#example/basic
+FilesAnalyzed: true
+PackageVerificationCode: 855c963a38237b5940a9b18ac5e503218bf26aea
+PackageLicenseInfoFromFiles: MIT or Apache-2.0
+PackageLicenseDeclared: MIT or Apache-2.0
+PackageCopyrightText: NOASSERTION

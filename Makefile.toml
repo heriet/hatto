@@ -1,0 +1,15 @@
+[tasks.help]
+command = "cargo"
+args = ["run", "--bin=hatto", "--", "help"]
+
+[tasks.basic]
+command = "cargo"
+args = ["run", "--bin=hatto", "--", "evaluate", "--policy=example/basic/policy.py", "--curation=example/basic/curation.py", "example/basic/basic.tsv"]
+
+[tasks.basic-spdx]
+command = "cargo"
+args = ["run", "--bin=hatto", "--", "evaluate", "--policy=example/basic/policy.py", "--curation=example/basic/curation.py", "example/basic/basic.spdx"]
+
+[tasks.basic-cdx-xml]
+command = "cargo"
+args = ["run", "--bin=hatto", "--", "evaluate", "--policy=example/basic/policy.py", "--curation=example/basic/curation.py", "example/basic/basic.cdx.xml"]
