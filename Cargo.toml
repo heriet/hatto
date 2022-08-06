@@ -2,9 +2,14 @@
 name = "hatto"
 version = "0.1.0"
 authors = ["heriet <heriet@heriet.info>"]
+description = "CLI for software license policy check."
+repository = "https://github.com/heriet/hatto"
 edition = "2021"
-publish = false
 license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = ["example/", ".github/"]
+categories = ["development-tools::build-utils"]
+keywords = ["license"]
 
 [[bin]]
 name = "hatto"
