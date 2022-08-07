@@ -1,56 +1,23 @@
-# hatto
+# evaluate
 
-hatto is CLI for SBOM policy evaluation.
-
-## Installation
-
-```sh
-cargo install hatto
-```
-
-or
-
-```sh
-docker pull ghcr.io/heriet/hatto:latest
-```
-
-## Requirements
-
-hatto is using [PyO3](https://github.com/PyO3/pyo3). So, hatto requires Python shared library.
-
-```sh
-sudo apt install python3-dev
-```
-
-## Usage
-
-### evaluate
-
-```sh
-hatto evaluate <SBOM or tsv file>
-```
-
-on docker
-
-```sh
-docker run -v $(PWD):/work ghcr.io/heriet/hatto:latest evaluate <SBOM or tsv file>
-```
+`hatto evaluate` is evaluate license policy.
 
 ```sh
 $ hatto evaluate --help
+hatto-evaluate
 evaluate policy
 
 USAGE:
     hatto evaluate [OPTIONS] <FILE>
 
 ARGS:
-    <FILE>    
+    <FILE>
 
 OPTIONS:
-    -c, --curation <FILE>              
+    -c, --curation <FILE>
     -h, --help                         Print help information
     -o, --output <OUTPUT_FORMAT>       [default: human] [possible values: human, json]
-    -p, --policy <FILE>                
+    -p, --policy <FILE>
     -t, --source-type <SOURCE_TYPE>    [possible values: tsv, spdx-tag, spdx-json, spdx-yaml,
                                        cyclone-dx-json, cyclone-dx-xml]
 ```
@@ -120,19 +87,3 @@ OK bar 1.1.2 licenses:["BSD-3-Clause"] annotations:{}
 ```
 
 These allow hatto to perform flexible license policy evaluation on your teams or organizations.
-
-
-## Lisense
-
-Licensed under either of
-
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
-
-## Contribution
-
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
-dual licensed as above, without any additional terms or conditions.

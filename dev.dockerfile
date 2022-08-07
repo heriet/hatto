@@ -20,4 +20,5 @@ RUN rustup component add \
 RUN cargo install \ 
       cargo-edit \
       cargo-watch \
-      cargo-make
+      cargo-make \
+      mdbook

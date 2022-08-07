@@ -1,0 +1,8 @@
+[book]
+authors = ["heriet"]
+languate = "en"
+multilingual = false
+src = "src"
+title = "The hatto User Guide"
+
+[output.html]
